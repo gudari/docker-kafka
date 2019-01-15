@@ -1,0 +1,12 @@
+sudo: required
+
+language: bash
+
+services:
+  - 'docker'
+
+before_install:
+  - bash build.sh
+
+script:
+  - bash push.sh
