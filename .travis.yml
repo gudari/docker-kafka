@@ -6,7 +6,7 @@ services:
   - 'docker'
 
 before_install:
-  - bash build.sh
+  - make src-all
 
 script:
-  - bash push.sh
+  - make release-all
